@@ -1,30 +1,188 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="cabecalho">
-                <p class="titulo1">
-                    Previsão do Tempo nas Capitais da Região Sul
-                </p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Previsão do Tempo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cabecalho">
+            <p class="titulo1">
+                Previsão do Tempo nas Capitais da Região Sul
+            </p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="coluna1">
+            <div class="coluna1Child">
+                <div class="radio">
+                    <input type="radio" class="selectRadio" name="nmCidade" id="idCuritiba">
+                    <label for="idCuritiba">Curitiba</label>
+                    <input type="radio" class="selectRadio" name="nmCidade" id="idFlorianopolis">
+                    <label for="idFlorianopolis">Florianópolis</label>
+                    <input type="radio" class="selectRadio" name="nmCidade" id="idRioGrandeSul">
+                    <label for="idRioGrandeSul">Rio Grande do Sul</label>
+                </div>
+                <div class="images">
+                    <img class="imageCidade" src="./images/CTB.png" alt="Foto da região sul com com pin em Curitiba">
+                    <img class="imageCidade" src="./images/FNL.png" alt="Foto da região sul com com pin em Florianópolis" hidden>
+                    <img class="imageCidade" src="./images/RS.png" alt="Foto da região sul com com pin em Rio Grande do Sul" hidden>
+                </div>
             </div>
-        </header>
-        <main class="main">
-            <div class="images">
-                <img src="" alt="Foto da região sul com com pin em Curitiba">
-                <img src="" alt="Foto da região sul com com pin em Florianópolis">
-                <img src="" alt="Foto da região sul com com pin em Rio Grande do Sul">
+        </div>
+        <div class="coluna2">
+            <div class="coluna2Child">
+                <div class="nomeCidade">
+                    <output class="nomeCidade" id="nomeCidade">Nome da Cidade</output>
+                </div>
+                <div class="conjunto1">
+                    <div class="tempCidade">
+                        <output class="tempCidade" id="tempCidade">0ºC</output>
+                    </div>
+                    <div class="imageTemp">
+                        <img class="mainImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol">
+                        <img class="mainImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva" hidden>
+                        <img class="mainImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado" hidden>
+                        <img class="mainImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="imageSolNuvem"
+                            hidden>
+                    </div>
+                </div>
+                <div class="maxMin">
+                    <output class="tempCidadeMain" id="tempCidadeMax">MaxºC</output>
+                    <output class="tempCidadeMain" id="tempCidadeMin">MinºC</output>
+                </div>
             </div>
-            <div class="dia">
-                <output class="nomeCidade" id="nomeCidade">Nome da Cidade</output>
-                <output class="tempCidade" id="tempCidade">0ºC</output>
-                <img src="" alt="">
+        </div>
+        <div class="coluna3">
+            <div class="coluna3Child">
+                <div class="pSemana">
+                    <p class="fraseSemana">
+                        Dias da Semana
+                    </p>
+                </div>
+                <div class="diasSemana">
+                    <div class="diaSec">
+                        <div class="conjuntoSec">
+                            <div class="nomeDia">
+                                <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            </div>
+                            <div class="box">
+                                <div class="boxImage">
+                                    <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol">
+                                    <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva" hidden>
+                                    <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado" hidden>
+                                    <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="imageSolNuvem" hidden>
+                                </div>
+                                <div class="infoSec">
+                                    <div class="max">
+                                        <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    </div>
+                                    <div class="min">
+                                        <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diaSec">
+                        <div class="conjuntoSec">
+                            <div class="nomeDia">
+                                <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            </div>
+                            <div class="box">
+                                <div class="boxImage">
+                                    <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol" hidden>
+                                    <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva" hidden>
+                                    <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado">
+                                    <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="imageSolNuvem" hidden>
+                                </div>
+                                <div class="infoSec">
+                                    <div class="max">
+                                        <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    </div>
+                                    <div class="min">
+                                        <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diaSec">
+                        <div class="conjuntoSec">
+                            <div class="nomeDia">
+                                <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            </div>
+                            <div class="box">
+                                <div class="boxImage">
+                                    <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol" hidden>
+                                    <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva" hidden>
+                                    <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado" hidden>
+                                    <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="imageSolNuvem">
+                                </div>
+                                <div class="infoSec">
+                                    <div class="max">
+                                        <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    </div>
+                                    <div class="min">
+                                        <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diaSec">
+                        <div class="conjuntoSec">
+                            <div class="nomeDia">
+                                <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            </div>
+                            <div class="box">
+                                <div class="boxImage">
+                                    <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol" hidden>
+                                    <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva">
+                                    <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado" hidden>
+                                    <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="imageSolNuvem" hidden>
+                                </div>
+                                <div class="infoSec">
+                                    <div class="max">
+                                        <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    </div>
+                                    <div class="min">
+                                        <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
+<script>
+    //415add6
+
+    //https://api.hgbrasil.com/weather?woeid=90200648
+
+
+                //API - Application Programing Interface
+                //Endpoint - Endereço dentro do servidor 
+                (function () {
+                    //AJAX
+                    var xhr = new XMLHttpRequest(); 
+
+                    xhr.open("GET", "https://api.hgbrasil.com/weather?woeid=90200648")
+
+                    xhr.addEventListener("load", function(){
+                        var resposta = xhr.responseText;
+                        imprimirValor(resposta)
+                    })
+                    
+                    xhr.send()
+                })()
+</script>
 </html>
