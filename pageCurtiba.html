@@ -21,9 +21,9 @@
         <div class="coluna1">
             <div class="coluna1Child">
                 <div class="radio">
-                    <a href="./pageCurtiba.html" id="idCuritiba" class="link">Curitiba</a>
-                    <a href="./index.html" id="idIndex" class="link">Florianópolis</a>
-                    <a href="./pagePortoAlegre.html" id="idPortoAlegre" class="link">Porto Alegre</a>
+                    <a href="pages/perfil.html" id="idCuritiba" class="link">Curitiba</a>
+                    <a href="index.html" id="idIndex" class="link">Florianópolis</a>
+                    <a href="pages/contato.html" id="idPortoAlegre" class="link">Porto Alegre</a>
                     <!-- <input type="radio" class="selectRadio" name="nmCidade" id="idCuritiba">
                     <label for="idCuritiba">Curitiba</label>
                     <input type="radio" class="selectRadio" name="nmCidade" id="idFlorianopolis">
@@ -183,7 +183,7 @@
         //AJAX
         var xhr = new XMLHttpRequest();
 
-        xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&woeid=90200648")
+        xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&woeid=455822")
 
         xhr.addEventListener("load", function () {
             var resposta = xhr.responseText;
@@ -200,11 +200,17 @@
 
         let tempoObj = JSON.parse(tempoJson);
         console.log(tempoObj);
+        // let cotacaoCompraText = ""
 
-        tempoObj.value.forEach(function(dados){
-            diaHoje = tempoHoje + dados.date + "; "
-        })
-        console.log(diaHoje);
+        // console.log(valorObj);
+        // //console.log(valorObj.value[4].cotacaoCompra);
+
+        // valorObj.value.forEach(function (boletim) {
+        //     cotacaoCompraText = cotacaoCompraText + boletim.cotacaoCompra + "; "
+        // })
+
+        // console.log(cotacaoCompraText);
+        // document.getElementById("idOut").value = "Cotação de compra: " + cotacaoCompraText
 
     }
 </script>

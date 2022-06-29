@@ -21,9 +21,9 @@
         <div class="coluna1">
             <div class="coluna1Child">
                 <div class="radio">
-                    <a href="./pageCurtiba.html" id="idCuritiba" class="link">Curitiba</a>
+                    <a href="./pages/perfil.html" id="idCuritiba" class="link">Curitiba</a>
                     <a href="./index.html" id="idIndex" class="link">Florianópolis</a>
-                    <a href="./pagePortoAlegre.html" id="idPortoAlegre" class="link">Porto Alegre</a>
+                    <a href="./pages/contato.html" id="idPortoAlegre" class="link">Porto Alegre</a>
                     <!-- <input type="radio" class="selectRadio" name="nmCidade" id="idCuritiba">
                     <label for="idCuritiba">Curitiba</label>
                     <input type="radio" class="selectRadio" name="nmCidade" id="idFlorianopolis">
@@ -178,12 +178,11 @@
 
     //API - Application Programing Interface
     //Endpoint - Endereço dentro do servidor 
-
     (function () {
         //AJAX
         var xhr = new XMLHttpRequest();
 
-        xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&woeid=90200648")
+        xhr.open("GET", "https://api.hgbrasil.com/weather?format=json-cors&woeid=455823")
 
         xhr.addEventListener("load", function () {
             var resposta = xhr.responseText;
@@ -195,17 +194,14 @@
         console.log()
     })()
 
+
     function transformarTempo(tempoJson) {
         console.log(tempoJson);
 
         let tempoObj = JSON.parse(tempoJson);
-        console.log(tempoObj);
+        console.log(tempoObj)
 
-        tempoObj.value.forEach(function(dados){
-            diaHoje = tempoHoje + dados.date + "; "
-        })
-        console.log(diaHoje);
-
+        
     }
 </script>
 
