@@ -21,9 +21,9 @@
         <div class="coluna1">
             <div class="coluna1Child">
                 <div class="radio">
-                    <a href="pages/perfil.html" id="idCuritiba" class="link">Curitiba</a>
-                    <a href="index.html" id="idIndex" class="link">Florianópolis</a>
-                    <a href="pages/contato.html" id="idPortoAlegre" class="link">Porto Alegre</a>
+                    <a href="./pageCurtiba.html" id="idCuritiba" class="link">Curitiba</a>
+                    <a href="./index.html" id="idIndex" class="link">Florianópolis</a>
+                    <a href="./pagePortoAlegre.html" id="idPortoAlegre" class="link">Porto Alegre</a>
                     <!-- <input type="radio" class="selectRadio" name="nmCidade" id="idCuritiba">
                     <label for="idCuritiba">Curitiba</label>
                     <input type="radio" class="selectRadio" name="nmCidade" id="idFlorianopolis">
@@ -32,34 +32,32 @@
                     <label for="idPortoAlegre">Porto Alegre</label> -->
                 </div>
                 <div class="images">
-                    <img class="imageCidade" src="./images/CTB.png" alt="Foto da região sul com com pin em Curitiba">
-                    <img class="imageCidade" src="./images/FNL.png"
-                        alt="Foto da região sul com com pin em Florianópolis" hidden>
-                    <img class="imageCidade" src="./images/RS.png" alt="Foto da região sul com com pin em Porto Alegre"
-                        hidden>
+                    <img class="imageCidade" src="./images/CTB.png" alt="Foto da região sul com com pin em Florianópolis" >
                 </div>
             </div>
         </div>
         <div class="coluna2">
             <div class="coluna2Child">
                 <div class="nomeCidade">
-                    <output class="nomeCidade" id="nomeCidade">Nome da Cidade</output>
+                    <output class="nomeCidade" id="nomeCidade"></output>
+                </div>
+                <div class="divDataCidade">
+                    <output class="dataCidade" id="dataCidade"></output>
                 </div>
                 <div class="conjunto1">
                     <div class="tempCidade">
-                        <output class="tempCidade" id="tempCidade">0ºC</output>
+                        <output class="tempCidade" id="tempCidade"></output>
                     </div>
                     <div class="imageTemp">
-                        <img class="mainImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol">
-                        <img class="mainImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva" hidden>
-                        <img class="mainImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado" hidden>
-                        <img class="mainImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="imageSolNuvem"
-                            hidden>
+                        <img class="mainImage" src="./images/sol.png" alt="Imagem Sol" id="idImageSol" hidden>
+                        <img class="mainImage" src="./images/chuva.png" alt="Imagem Chuva" id="idImageChuva" hidden>
+                        <img class="mainImage" src="./images/nublado.png" alt="Imagem Nublado" id="idImageNublado" hidden>
+                        <img class="mainImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="idImageTempoLimpo" hidden>
                     </div>
                 </div>
                 <div class="maxMin">
-                    <output class="tempCidadeMain" id="tempCidadeMax">MaxºC</output>
-                    <output class="tempCidadeMain" id="tempCidadeMin">MinºC</output>
+                    <output class="tempCidadeMain" id="tempCidadeMax"></output>
+                    <output class="tempCidadeMain" id="tempCidadeMin"></output>
                 </div>
             </div>
         </div>
@@ -73,94 +71,90 @@
                 <div class="diasSemana">
                     <div class="conjuntoSec">
                         <div class="nomeDia">
-                            <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            <output class="dataDiaSemana" id="dataDiaSemana1">Dia + data</output>
                         </div>
                         <div class="box">
                             <div class="boxImage">
-                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol">
-                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva"
+                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="idImageSol1" hidden>
+                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="idImageChuva1"
                                     hidden>
-                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado"
+                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="idImageNublado1"
                                     hidden>
-                                <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem"
-                                    id="imageSolNuvem" hidden>
+                                <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Tempo Limpo"
+                                    id="idImageTempoLimpo1" hidden>
                             </div>
                             <div class="infoSec">
                                 <div class="max">
-                                    <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    <output class="tempCidadeMax" id="tempCidadeMax1"></output>
                                 </div>
                                 <div class="min">
-                                    <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    <output class="tempCidadeMin" id="tempCidadeMin1"></output>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="conjuntoSec">
                         <div class="nomeDia">
-                            <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            <output class="dataDiaSemana" id="dataDiaSemana2"></output>
                         </div>
                         <div class="box">
                             <div class="boxImage">
-                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol" hidden>
-                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva"
-                                    hidden>
-                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado">
-                                <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem"
-                                    id="imageSolNuvem" hidden>
+                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="idiImageSol2" hidden>
+                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="idImageChuva2" hidden>
+                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="idImageNublado2" hidden>
+                                <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="idImageTempoLimpo2" hidden>
                             </div>
                             <div class="infoSec">
                                 <div class="max">
-                                    <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    <output class="tempCidadeMax" id="tempCidadeMax2"></output>
                                 </div>
                                 <div class="min">
-                                    <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    <output class="tempCidadeMin" id="tempCidadeMin2"></output>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="conjuntoSec">
                         <div class="nomeDia">
-                            <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            <output class="dataDiaSemana" id="dataDiaSemana3"></output>
                         </div>
                         <div class="box">
                             <div class="boxImage">
-                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol" hidden>
-                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva"
+                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="idImageSol3" hidden>
+                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="idImageChuva3"
                                     hidden>
-                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado"
+                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="idImageNublado3"
                                     hidden>
                                 <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem"
-                                    id="imageSolNuvem">
+                                    id="idImageTempoLimpo3" hidden>
                             </div>
                             <div class="infoSec">
                                 <div class="max">
-                                    <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    <output class="tempCidadeMax" id="tempCidadeMax3"></output>
                                 </div>
                                 <div class="min">
-                                    <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    <output class="tempCidadeMin" id="tempCidadeMin3"></output>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="conjuntoSec">
                         <div class="nomeDia">
-                            <output class="dataDiaSemana" id="dataDiaSemana">Dia + data</output>
+                            <output class="dataDiaSemana" id="dataDiaSemana4"></output>
                         </div>
                         <div class="box">
                             <div class="boxImage">
-                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="imageSol" hidden>
-                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="imageChuva">
-                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="imageNublado"
-                                    hidden>
-                                <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem"
-                                    id="imageSolNuvem" hidden>
+                                <img class="secImage" src="./images/sol.png" alt="Imagem Sol" id="idImageSol4" hidden>
+                                <img class="secImage" src="./images/chuva.png" alt="Imagem Chuva" id="idImageChuva4" hidden>
+                                <img class="secImage" src="./images/nublado.png" alt="Imagem Nublado" id="idImageNublado4" hidden>
+                                <img class="secImage" src="./images/solEnuvem.png" alt="Imagem Sol/Nuvem" id="idImageTempoLimpo4" hidden>
                             </div>
                             <div class="infoSec">
                                 <div class="max">
-                                    <output class="tempCidadeMax" id="tempCidadeMax">MaxºC</output>
+                                    <output class="tempCidadeMax" id="tempCidadeMax4"></output>
                                 </div>
                                 <div class="min">
-                                    <output class="tempCidadeMin" id="tempCidadeMin">MinºC</output>
+                                    <output class="tempCidadeMin" id="tempCidadeMin4"></output>
                                 </div>
                             </div>
                         </div>
@@ -196,21 +190,111 @@
     })()
 
     function transformarTempo(tempoJson) {
-        console.log(tempoJson);
+        //console.log(tempoJson);
 
         let tempoObj = JSON.parse(tempoJson);
-        console.log(tempoObj);
-        // let cotacaoCompraText = ""
 
-        // console.log(valorObj);
-        // //console.log(valorObj.value[4].cotacaoCompra);
-
-        // valorObj.value.forEach(function (boletim) {
-        //     cotacaoCompraText = cotacaoCompraText + boletim.cotacaoCompra + "; "
+        console.log(tempoObj.results);
+        console.log(tempoObj.results.forecast[0]);
+        // tempoObj.value.forEach(function(dados){
+        //     diaHoje = tempoHoje + dados.date + "; "
         // })
+        // console.log(diaHoje);
 
-        // console.log(cotacaoCompraText);
-        // document.getElementById("idOut").value = "Cotação de compra: " + cotacaoCompraText
+        //Coluna Princial
+        document.getElementById("nomeCidade").value = tempoObj.results.city
+        document.getElementById("dataCidade").value = tempoObj.results.forecast[0].date + " - " + tempoObj.results.forecast[0].weekday
+        document.getElementById("tempCidade").value = tempoObj.results.temp + "ºC"
+        document.getElementById("tempCidadeMax").value = tempoObj.results.forecast[0].max + "ºC"
+        document.getElementById("tempCidadeMin").value = tempoObj.results.forecast[0].min + "ºC"
+
+        if (tempoObj.results.forecast[0].description == "Tempo limpo") {
+            document.getElementById("idImageTempoLimpo").hidden = false
+        }
+        if (tempoObj.results.forecast[0].description == "Tempo Nublado" || tempoObj.results.forecast[0].description == "Parcialmente nublado") {
+            document.getElementById("idImageNublado").hidden = false
+        }
+        if (tempoObj.results.forecast[0].description == "Chuva" || tempoObj.results.forecast[0].description == "Chuvas esparsas") {
+            document.getElementById("idImageChuva").hidden = false
+        }
+        if (tempoObj.results.forecast[0].description == "Ensolarado") {
+            document.getElementById("idImageSol").hidden = false
+        }
+
+        //Coluna direta
+        
+        //Dia 1
+            document.getElementById("dataDiaSemana1").value = tempoObj.results.forecast[1].date + " - " + tempoObj.results.forecast[1].weekday
+            document.getElementById("tempCidadeMax1").value = tempoObj.results.forecast[1].max + "ºC"
+            document.getElementById("tempCidadeMin1").value = tempoObj.results.forecast[1].min + "ºC"
+
+            if (tempoObj.results.forecast[1].description == "Tempo limpo") {
+                document.getElementById("idImageTempoLimpo1").hidden = false
+            }
+            if (tempoObj.results.forecast[1].description == "Tempo nublado" || tempoObj.results.forecast[1].description == "Parcialmente nublado") {
+                document.getElementById("idImageNublado1").hidden = false
+            }
+            if (tempoObj.results.forecast[1].description == "Chuva" || tempoObj.results.forecast[1].description == "Chuvas esparsas") {
+                document.getElementById("idImageChuva1").hidden = false
+            }
+            if (tempoObj.results.forecast[1].description == "Ensolarado") {
+                document.getElementById("idImageSol1").hidden = false
+            }
+
+            //Dia 2
+            document.getElementById("dataDiaSemana2").value = tempoObj.results.forecast[2].date + " - " + tempoObj.results.forecast[2].weekday
+            document.getElementById("tempCidadeMax2").value = tempoObj.results.forecast[2].max + "ºC"
+            document.getElementById("tempCidadeMin2").value = tempoObj.results.forecast[2].min + "ºC"
+
+            if (tempoObj.results.forecast[2].description == "Tempo limpo") {
+                document.getElementById("idImageTempoLimpo2").hidden = false
+            }
+            if (tempoObj.results.forecast[2].description == "Tempo nublado" || tempoObj.results.forecast[2].description == "Parcialmente nublado") {
+                document.getElementById("idImageNublado2").hidden = false
+            }
+            if (tempoObj.results.forecast[2].description == "Chuva" || tempoObj.results.forecast[2].description == "Chuvas esparsas") {
+                document.getElementById("idImageChuva2").hidden = false
+            }
+            if (tempoObj.results.forecast[2].description == "Ensolarado") {
+                document.getElementById("idImageSol2").hidden = false
+            }
+
+            //Dia 3
+            document.getElementById("dataDiaSemana3").value = tempoObj.results.forecast[3].date + " - " + tempoObj.results.forecast[3].weekday
+            document.getElementById("tempCidadeMax3").value = tempoObj.results.forecast[3].max + "ºC"
+            document.getElementById("tempCidadeMin3").value = tempoObj.results.forecast[3].min + "ºC"
+
+            if (tempoObj.results.forecast[3].description == "Tempo limpo") {
+                document.getElementById("idImageTempoLimpo3").hidden = false
+            }
+            if (tempoObj.results.forecast[3].description == "Tempo nublado" || tempoObj.results.forecast[3].description == "Parcialmente nublado") {
+                document.getElementById("idImageNublado3").hidden = false
+            }
+            if (tempoObj.results.forecast[3].description == "Chuva" || tempoObj.results.forecast[3].description == "Chuvas esparsas") {
+                document.getElementById("idImageChuva3").hidden = false
+            }
+            if (tempoObj.results.forecast[3].description == "Ensolarado") {
+                document.getElementById("idImageSol3").hidden = false
+            }
+
+            //Dia 4
+            document.getElementById("dataDiaSemana4").value = tempoObj.results.forecast[4].date + " - " + tempoObj.results.forecast[4].weekday
+            document.getElementById("tempCidadeMax4").value = tempoObj.results.forecast[4].max + "ºC"
+            document.getElementById("tempCidadeMin4").value = tempoObj.results.forecast[4].min + "ºC"
+
+            if (tempoObj.results.forecast[4].description == "Tempo limpo") {
+                document.getElementById("idImageTempoLimpo4").hidden = false
+            }
+            if (tempoObj.results.forecast[4].description == "Tempo ublado" || tempoObj.results.forecast[4].description == "Parcialmente nublado") {
+                document.getElementById("idImageNublado4").hidden = false
+            }
+            if (tempoObj.results.forecast[4].description == "Chuva" || tempoObj.results.forecast[4].description == "Chuvas esparsas") {
+                document.getElementById("idImageChuva4").hidden = false
+            }
+            if (tempoObj.results.forecast[4].description == "Ensolarado") {
+                document.getElementById("idImageSol4").hidden = false
+            }
+
 
     }
 </script>
