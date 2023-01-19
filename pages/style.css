@@ -1,0 +1,142 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+body {
+    background-color: white;
+    justify-content: center;
+    text-align: center;     
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.titulo1 {
+    font-size: 25px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+.coluna1 {
+    width: 40%;
+}
+
+.coluna2 {
+    width: 40%;
+}
+
+.coluna2Child {
+    margin-top: 100px;
+}
+
+.coluna3 {
+    width: 20%;
+}
+
+.radio {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.link {
+    margin-left: 15px;
+
+}
+
+.selectRadio {
+    margin-left: 15px;
+}
+
+
+.conjunto1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.nomeCidade {
+    margin: 30px;
+    font-size: 50px;
+}
+
+.divDataCidade {
+    margin-top: 55px;
+}
+
+.dataCidade {
+    font-size: 40px;
+    margin-top: 10px;
+    color: rgb(78, 78, 224);
+}
+
+.tempCidade {
+    margin-top: 50px;
+    margin-right: 35px;
+    font-size: 70px;
+}
+
+.mainImage {
+    height: 150px;
+    margin-left: 15px;
+    
+}
+
+.maxMin {
+    margin: 60px;
+    font-size: 30px;
+}
+
+.tempCidadeMain {
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+.imageCidade {
+    align-items: flex-start;
+    justify-content: center;
+    height: 580px;
+}
+
+.conjuntoSec {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.infoSec {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.secImage {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.minMax {
+    display: block;  
+}
